@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truong Gaming Official</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background:
+        radial-gradient(circle at 15% 20%, #075985 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #581c87 0%, transparent 35%),
+        #020617;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: rgba(0,0,0,.35);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #22d3ee;
+    text-shadow: 0 0 15px #22d3ee;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content {
+    max-width: 750px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #22d3ee;
+    border-radius: 30px;
+    color: #67e8f9;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(42px, 10vw, 75px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #22d3ee;
+    text-shadow: 0 0 25px #22d3ee;
+}
+
+.description {
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.start {
+    display: inline-block;
+    padding: 17px 38px;
+    border-radius: 50px;
+    background: #22d3ee;
+    color: #001018;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 0 30px rgba(34,211,238,.5);
+    transition: .25s;
+}
+
+.start:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 50px rgba(34,211,238,.9);
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    margin: -50px auto 60px;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+}
+
+.card h2 {
+    color: #22d3ee;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.stat {
+    flex: 1;
+    padding: 20px 10px;
+    background: rgba(255,255,255,.05);
+    border-radius: 15px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 25px;
+    color: #22d3ee;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⚡ TRUONG GAMING</div>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="content">
+
+        <div class="badge">🎮 GAMING WEBSITE</div>
+
+        <h1>
+            TRUONG<br>
+            <span>GAMING</span>
+        </h1>
+
+        <p class="description">
+            Chào mừng bạn đến với website riêng của mình.
+            <br>
+            Gaming • Technology • Fun
+        </p>
+
+        <!-- NÚT NÀY SẼ MỞ ẢNH BẠN ĐƯA -->
+        <a
+            class="start"
+            href="https://cdn.phototourl.com/free/2026-08-26-0ed900ca-76f6-49b8-86d0-85376ddd3e99.jpg"
+            target="_blank"
+            rel="noopener"
+        >
+            ấn ở đây nè sẽ hiện ra người đẹp trai nhất thế giới
+        </a>
+
+    </div>
+
+</section>
+
+<section class="card" id="about">
+
+    <h2>🔥 GIỚI THIỆU</h2>
+
+    <p>
+        Đây là website gaming đầu tiên của mình,
+        được xây dựng bằng HTML và CSS trên Android.
+    </p>
+
+    <div class="stats">
+
+        <div class="stat">
+            <strong>01</strong>
+            Website
+        </div>
+
+        <div class="stat">
+            <strong>100%</strong>
+            Gaming
+        </div>
+
+        <div class="stat">
+            <strong>🔥</strong>
+            Fun
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Truong Gaming
+</footer>
+
+</body>
+  </html>
